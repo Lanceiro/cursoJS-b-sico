@@ -4,6 +4,6 @@ Curso que fiz do canal  <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&lis
 
 Recomendo muito o curso para quem está iniciando no desenvolvimento web como eu.
 
-Esse curso vai até o assunto de funções. Portanto, é necessário estudar por fora os outros assuntos(POO, frameworks, etc) por fora após terminar o curso.
+Esse curso vai até o assunto de funções. Portanto, é necessário estudar por fora os outros assuntos(POO, frameworks, etc) após terminar o curso.
 
 Uma coisa bem legal sobre o curso é que os exercícios/desafios passados pelo professor Gustavo Guanabara sempre envolve HTML e CSS. 
