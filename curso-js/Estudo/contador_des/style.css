@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(27, 26, 85), rgb(226, 43, 67));
+    background-attachment: fixed;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+section p {
+    font-style: oblique;
+}
+
+#res{
+    padding-top: 10px;
+}
+footer {
+    font-size: 17px;
+    text-align: center;
+    color: white;
+}

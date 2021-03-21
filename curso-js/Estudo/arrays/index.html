@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Número (entre 1 e 100):
+                <input type="number" name="" id="txtnum">
+                <button onclick="adicionar()">Adicionar</button>
+            </p>
+            <p>Digite o número que deseja remover:
+                <input type="number" name="" id="txtrem">
+                <button onclick="remover()">Remover</button>
+            </p>
+        </div>
+        <div>
+            <select name="" id="seln" size="8">
+                <option></option>
+            </select>
+        </div>
+        <button onclick="finalizar()">Finalizar</button>
+        <div id="resp">
+        </div>
+    </section>
+    <footer>
+        <p style="font-style: italic;">&copy; CursoEmVideo</p>
+    </footer>
+    <script src="src.js"></script>
+</body>
+</html>

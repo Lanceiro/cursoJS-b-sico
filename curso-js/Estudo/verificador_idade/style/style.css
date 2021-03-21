@@ -1,0 +1,28 @@
+body {
+    background-image: linear-gradient(to top, #688C89, #D3BAA7);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+section {
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 2px 2px 3px #ffe1c9;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: black;
+}
+
+#res {
+    text-align: center;
+}
