@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        .botao {width: 175px; height: 65px; font-size: 16px;}
+    </style>
+    <title>Ano Bissexto</title>
+</head>
+<body>
+    <header>
+        <h1>Ano Bissexto</h1>
+    </header>
+    <section>
+        <div>
+            <input class="botao" type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="resp">
+            <p>Clique no botão acima para saber se ele é bissexto.</p>
+        </div>
+    </section>
+    <script>
+        function verificar() {
+            let ano = prompt('Qual é o ano que você quer verificar?');
+            let year = Number(ano);
+
+            let resp = document.getElementById('resp');
+            resp.innerHTML = "";
+            let h1 = document.createElement('h1');
+            let txth1 = document.createTextNode(`Analisando o ano de ${year}`);
+
+            let p = document.createElement('p');
+            let string = "";
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                string = 'É BISSEXTO!';
+            } else {
+                string = "NÃO É BISSEXTO!";
+            }
+            let txtp = document.createTextNode(`O ano de ${year} ${string}`);
+
+            h1.appendChild(txth1);
+            p.appendChild(txtp);
+            resp.appendChild(h1);
+            resp.appendChild(p);
+        }
+    </script>
+</body>
+</html>

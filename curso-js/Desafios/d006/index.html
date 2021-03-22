@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        .botao {
+            width: 175px;
+            height: 65px;
+            font-size: 20px;
+            font-family: monospace;
+        }
+    </style>
+    <title>Conversor de temperaturas</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de temperaturas</h1>
+    </header>
+    <section>
+        <div>
+            <input class="botao" type="button" value="Converter" onclick="converter()">
+        </div>
+        <div id="resp">
+            <p>Clique no botão acima para iniciar.</p>
+        </div>
+    </section>
+    <script>
+        function converter() {
+            let c = prompt('Digite uma temperatura em °C (Celsius): ');
+            if (c.length == 0) {
+                alert('Por favor, digite um valor!');
+            } else {
+                let k = Number(c) + 273;
+                let f = 1.8 * Number(c) + 32;
+                let resp = document.querySelector('div#resp');
+                resp.innerHTML = "";
+    
+                let h1 = document.createElement('h1');
+                let txth1 = document.createTextNode(`A temperatura de ${c}°C, corresponde a ...`);
+                
+                let p1 = document.createElement('p');
+                let txtp1 = document.createTextNode(`${k}°K (Kelvin)`);
+                let p2 = document.createElement('p');
+                let txtp2 = document.createTextNode(`${f}°F (Fahrenheit)`);
+    
+                h1.appendChild(txth1);
+                p1.appendChild(txtp1);
+                p2.appendChild(txtp2);
+                resp.appendChild(h1);
+                resp.appendChild(p1);
+                resp.appendChild(p2);
+            }
+        }
+    </script>
+</body>
+</html>
